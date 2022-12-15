@@ -14,3 +14,8 @@ starship init fish | source
 status --is-interactive; and rbenv init - fish | source
 
 set PATH (go env GOPATH)/bin:$PATH
+
+if status is-interactive
+and not set -q TMUX
+    exec tmux
+end
