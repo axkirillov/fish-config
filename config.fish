@@ -19,3 +19,8 @@ if status is-interactive
 and not set -q TMUX
     exec tmux
 end
+
+# this is for webi that i have to use to install old k9s
+# https://github.com/derailed/k9s/issues/1619
+# Generated for envman. Do not edit.
+test -s "$HOME/.config/envman/load.fish"; and source "$HOME/.config/envman/load.fish"
